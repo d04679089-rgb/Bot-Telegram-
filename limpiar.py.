@@ -1,0 +1,10 @@
+import telebot
+
+TOKEN = "8607152482:AAGt_KNNUiBJIJ4F6mYmM2GTHjuKNXST8W0"
+bot = telebot.TeleBot(TOKEN)
+
+try:
+    bot.delete_webhook()
+    print("Webhook eliminado con éxito")
+except Exception as e:
+    print(f"Error al eliminar: {e}")
